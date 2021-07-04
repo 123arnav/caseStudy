@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Case study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+    <center>
+<label id="heading">Case study <img id="logo" src="logo.gif"></label>
+<h2>Test images:</h2>
+<hr>
+<hr>
+<img id="bottle"src="bottle.jpg">
+<br>
+<span>
+    <label>Out put of</label>
+    <label id="mobile">Mobile net:</label>
+    <label id="mobile_bottle">Hair spray</label>
+    </span>
+    <br>
+    <span>
+        <label>Out put of</label>
+        <label id="mobile_bottle">Wolfram project:Vial</label>
+        <label id="_wolfram_bottle"></label>
+        </span>
+        <div id="conc">
+            <span>
+                <label>Result: </label>
+                <label id="result">Both wrong</label>
+            </span>
+            <hr>
+            <span>
+                <label>MiniConclusion:</label>
+                <label id="concluision_bottle">Both of them detected the image wrong as the image was of bottles</label>
+            </span>
+        </div>
+
+
+
+<br>
+<br>
+<br>
+            <img id="pizza"src="pizza.jpg">
+            <br>
+            <span>
+                <label>Out put of</label>
+                <label id="mobile">Mobile net Pizza pie<label>
+                <label id="pizza_mobile"></label>
+                </span>
+                <br>
+                <span>
+                    <label>Out put of</label>
+                    <label id="mobile">Wolfram project:Pizza</label>
+                    <label id="pizza_wolfram"></label>
+                    </span>
+                    <div id="conc">
+                        <span>
+                            <label>Result:Both correct</label>
+                            <label id="pizza_result"></label>
+                        </span>
+                        <hr>
+                        <span>
+                            <label>MiniConclusion: Both of them detected this image correct as it was pizza</label>
+                            <label id="pizza_conclusion"></label>
+                        </span>
+                       
+        </div>
+
+
+
+
+
+        <br>
+<br>
+<br>
+            <img id="book"src="book.jpeg">
+            <br>
+            <span>
+                <label>Out put of</label>
+                <label id="mobile">Mobile net:Cartoon</label>
+                <label id="book_mobile"></label>
+                </span>
+                <br>
+                <span>
+                    <label>Out put of</label>
+                    <label id="mobile">Wolfram project:Book</label>
+                    <label id="book_wolfram"></label>
+                    </span>
+                    <div id="conc">
+                        <span>
+                            <label>Result:Wolfram correct</label>
+                            <label id="book_result"></label>
+                        </span>
+                        <hr>
+                        <span>
+                            <label>MiniConclusion:</label>
+                            <label id="book_conclusion">Wolfram detected it correct as the image was of books.</label>
+                        </span>
+                       
+        </div>
+        <br>
+        <h2>Main conclusion</h2>
+        <span id="main_conclusion">Wolfram is a better image detection model than mobilenet as it detected 2 out of 3 images corrects where as mobilenet could detect only 1 out of 3 correct and also the 1 time Wolfram did get inccorrect it was still close</span>
+</center>
+</body>
+</html>
